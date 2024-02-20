@@ -1,0 +1,16 @@
+erdiagram Model3
+
+notation=uml
+
+entity Cliente {
+    IDCliente key
+   
+}
+
+relationship Incricao {
+    Cliente -> Curso
+}
+
+entity Curso {
+    IDCurso key
+}
