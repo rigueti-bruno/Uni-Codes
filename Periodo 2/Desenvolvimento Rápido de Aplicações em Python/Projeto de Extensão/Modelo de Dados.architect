@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.9">
+ <project-name>Modelo de Dados</project-name>
+ <print-settings printerName="Microsoft Print to PDF" numCopies="1" zoom="0.4" pageNumbersPrinted="false" orientation="0" paperWidth="612.0" paperHeight="792.0" leftBorder="50.00314960629921" rightBorder="50.003149606299225" topBorder="50.00314960629921" bottomBorder="50.00314960629917" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="(Target Database)" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="0e6611fb-73b1-4949-b852-18fd4cb672b5" name="Atentimentos" objectType="TABLE" physicalName="ft_atendimentos" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="af81a105-624c-4f7f-b406-b9262230529c" autoIncrement="true" autoIncrementSequenceName="ft_atendimentos_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="6a6c54c2-941e-4d7e-a6a0-4cdce319df3d" autoIncrement="false" autoIncrementSequenceName="ubs_id_ubs_seq" defaultValue="" name="ID Unidade de Saúde" nullable="0" physicalName="id_ubs" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks> Saúde.</remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="124d1bcd-d4cc-4360-a431-0e5672cbf3a1" autoIncrement="false" autoIncrementSequenceName="dim_especialidade_id_especialidade_seq" defaultValue="" name="ID Especialidade" nullable="0" physicalName="id_especialidade" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Identificação da Especilidade Resgistrada.</remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="fc4e0264-a7ee-425b-977f-4a42e8e0316f" autoIncrement="false" autoIncrementSequenceName="medico_id_medico_seq" defaultValue="" name="ID Medico" nullable="0" physicalName="id_medico" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Identificação do Médico na Sercretaria Municipal de Saúde.</remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="43d5e33c-e5a9-49ca-8fee-14176342b62c" autoIncrement="false" autoIncrementSequenceName="exame_id_exame_seq" defaultValue="" name="ID Exame" nullable="0" physicalName="id_exame" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Código de identificação do tipo de exame.</remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="285d9e44-2175-4952-943b-71564c5186df" autoIncrement="false" autoIncrementSequenceName="ft_atendimentos_data_seq" defaultValue="" name="Data" nullable="0" physicalName="data" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks>Indica a data que o atendimento foi realizado.</remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="989c4585-db93-4d2f-ac49-39fca6828937" autoIncrement="false" autoIncrementSequenceName="ft_atendimentos_nome_paciente_seq" defaultValue="" name="Paciente" nullable="0" physicalName="nome_paciente" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Indica o nome do Paciente atendido.</remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="bf61e022-f0ea-4017-81e0-65abcbe289c7" autoIncrement="false" autoIncrementSequenceName="ft_atendimentos_especialidade_seq" defaultValue="" name="Especialidade" nullable="0" physicalName="especialidade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Indica a especialidade médica do atendimento.</remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="8d1e9dc8-9ddb-4a5d-aaf1-fe490dcae2c6" autoIncrement="false" autoIncrementSequenceName="ft_atendimentos_id_sus_seq" defaultValue="" name="ID SUS" nullable="0" physicalName="id_sus" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-5" userDefinedTypeUUID="433cc8af-284d-4abb-8ef7-08ebcb34dbf1" >
+     <remarks>Indica o número do Cartão do SUS do paciente atendido.</remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="9759d428-baed-4170-b120-704aa2c4477d" autoIncrement="false" autoIncrementSequenceName="ft_atendimentos_medico_seq" defaultValue="" name="Médico" nullable="0" physicalName="medico" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Indica o nome do médico que atendeu o paciente.</remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="59712602-4d54-489c-980f-68fbbdb6a0cc" autoIncrement="false" autoIncrementSequenceName="ft_atendimentos_exame_seq" defaultValue="" name="Exame" nullable="0" physicalName="exame" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Indica se houve exame requisitado na consulta.</remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="1749ebc7-f151-47ba-984f-04af42b9530a" autoIncrement="false" autoIncrementSequenceName="ft_atendimentos_ubs_seq" defaultValue="" name="Unidade de Saúde" nullable="0" physicalName="ubs" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Indica em qual UBS ocorreu o atendimento.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX14" populated="true" UUID="b9c44ed7-981d-4788-bc48-f37ebd7c0884" clustered="false" name="id" physicalName="id" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC15" populated="true" UUID="db6ff0ee-c6c0-4679-9041-e49562db8219" ascendingOrDescending="ASCENDING" column-ref="COL2" name="id" physicalName="id" />
+     <index-column id="IDC16" populated="true" UUID="139e18ba-a24e-436c-91ad-4f4e6828156b" ascendingOrDescending="UNSPECIFIED" column-ref="COL3" name="ID Unidade de Saúde" physicalName="id_ubs" />
+     <index-column id="IDC17" populated="true" UUID="ca283350-b112-4400-acc6-e96a7747d14b" ascendingOrDescending="UNSPECIFIED" column-ref="COL4" name="ID Especialidade" physicalName="id_especialidade" />
+     <index-column id="IDC18" populated="true" UUID="074b2d33-37e2-4bb1-93cd-e8935d5f7391" ascendingOrDescending="UNSPECIFIED" column-ref="COL5" name="ID Medico" physicalName="id_medico" />
+     <index-column id="IDC19" populated="true" UUID="9751d6bf-1821-419d-90db-8e97df5eb84d" ascendingOrDescending="UNSPECIFIED" column-ref="COL6" name="ID Exame" physicalName="id_exame" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB20" populated="true" UUID="32e01c9e-96b5-4d88-81fd-d3bd2af72915" name="Especialidade" objectType="TABLE" physicalName="dim_especialidade" >
+   <remarks></remarks>
+   <folder id="FOLTAB201" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL21" populated="true" UUID="6dad6bce-45af-4552-8b13-44ab3f844b77" autoIncrement="true" autoIncrementSequenceName="dim_especialidade_id_especialidade_seq_1" defaultValue="" name="ID Especialidade" nullable="0" physicalName="id_especialidade" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Identificação da Especilidade Resgistrada.</remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="5daba779-3f0b-42ac-89fa-a3d286030baa" autoIncrement="false" autoIncrementSequenceName="dim_especialidade_descricao_seq" defaultValue="" name="Descrição" nullable="0" physicalName="descricao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Indica o nome da especialidade registrada.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB203" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB202" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB204" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX23" populated="true" UUID="d4f891d9-e549-4b23-aab8-242cf6ba5ea6" clustered="false" name="id_especialidade" physicalName="id_especialidade" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC24" populated="true" UUID="e8da22f9-eebb-4810-8e8e-837d2e32938a" ascendingOrDescending="UNSPECIFIED" column-ref="COL21" name="ID Especialidade" physicalName="id_especialidade" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB25" populated="true" UUID="ea79b4b9-2bfc-4369-beac-9b5e0717d37e" name="Medico" objectType="TABLE" physicalName="medico" >
+   <remarks></remarks>
+   <folder id="FOLTAB251" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL26" populated="true" UUID="0534fe54-6e29-4ac5-965b-a2e0e475d7da" autoIncrement="false" autoIncrementSequenceName="medico_id_medico_seq_1" defaultValue="" name="ID Medico" nullable="0" physicalName="id_medico" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Identificação do Médico na Sercretaria Municipal de Saúde.</remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="5f2521a0-a7c8-410e-a026-c1a5fd8cfe15" autoIncrement="false" autoIncrementSequenceName="dim_especialidade_id_especialidade_seq_2" defaultValue="" name="ID Especialidade" nullable="0" physicalName="id_especialidade" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Identificação da Especilidade Resgistrada.</remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="65a016a3-b56e-4522-a2d9-f25498cb1f23" autoIncrement="false" autoIncrementSequenceName="medico_nome_seq" defaultValue="" name="Nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Nome do Médico.</remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="75b947ff-5738-439f-adc0-ad824f909cec" autoIncrement="false" autoIncrementSequenceName="medico_crm_seq" defaultValue="" name="CRM" nullable="0" physicalName="crm" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Indica o número do registro do médico no CRM.</remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="a62cff38-c51a-4ace-a853-35d9f56104c0" autoIncrement="false" autoIncrementSequenceName="medico_especialidade_seq" defaultValue="" name="Especialidade" nullable="0" physicalName="especialidade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Indica a especialidade principal do médico.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB253" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB252" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB254" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX31" populated="true" UUID="97b652db-c42a-4f64-98ae-88dc59bedd71" clustered="false" name="id_medico" physicalName="id_medico" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC32" populated="true" UUID="e7d22474-1875-4a4e-baaa-dc053bf5a31e" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="ID Medico" physicalName="id_medico" />
+     <index-column id="IDC33" populated="true" UUID="ad8222b2-d300-4f96-bf07-ad64caf994fe" ascendingOrDescending="UNSPECIFIED" column-ref="COL27" name="ID Especialidade" physicalName="id_especialidade" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB34" populated="true" UUID="9a5ae569-6b19-4f9d-8a66-7bccb882148c" name="Exame" objectType="TABLE" physicalName="exame" >
+   <remarks></remarks>
+   <folder id="FOLTAB341" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL35" populated="true" UUID="ff489f09-8612-41cc-8e14-22da8163df2c" autoIncrement="true" autoIncrementSequenceName="exame_id_exame_seq_1" defaultValue="" name="ID Exame" nullable="0" physicalName="id_exame" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>Código de identificação do tipo de exame.</remarks>
+    </column>
+    <column id="COL36" populated="true" UUID="807610d6-b938-4e64-8a5d-0c47e353c396" autoIncrement="false" autoIncrementSequenceName="exame_descricao_seq" defaultValue="" name="Descrição" nullable="0" physicalName="descricao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Indica o nome do tipo de exame.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB343" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB342" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB344" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX37" populated="true" UUID="bae7a038-4675-47b7-86d4-9c9e3874d9c3" clustered="false" name="id_exame" physicalName="id_exame" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC38" populated="true" UUID="708dccb2-eff3-47d0-851b-cc97cee34c2a" ascendingOrDescending="UNSPECIFIED" column-ref="COL35" name="ID Exame" physicalName="id_exame" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB39" populated="true" UUID="5582130b-e29a-499a-b381-f9cca51cc930" name="Unidade de Saúde" objectType="TABLE" physicalName="ubs" >
+   <remarks></remarks>
+   <folder id="FOLTAB391" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL40" populated="true" UUID="7c76f235-c516-4b5c-8d21-493dde35686d" autoIncrement="true" autoIncrementSequenceName="ubs_id_ubs_seq_1" defaultValue="" name="ID Unidade de Saúde" nullable="0" physicalName="id_ubs" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks> Saúde.</remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="63361e75-3b34-42b9-bd6b-0674d7a46ab0" autoIncrement="false" autoIncrementSequenceName="ubs_bairro_seq" defaultValue="" name="Bairro" nullable="0" physicalName="bairro" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>e.</remarks>
+    </column>
+    <column id="COL42" populated="true" UUID="2f739558-da11-4c2e-8c2b-c96af8fb3171" autoIncrement="false" autoIncrementSequenceName="ubs_nome_ubs_seq" defaultValue="" name="Nome da Unidade de Saúde" nullable="0" physicalName="nome_ubs" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>Indica o nome designado à Unidade de Saúde.</remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB393" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB392" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB394" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX43" populated="true" UUID="533fa793-f6ab-43ec-9c07-0da2923d6b1e" clustered="false" name="id_ubs" physicalName="id_ubs" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC44" populated="true" UUID="a4462074-9fbf-4cd7-be2a-846d34d428b3" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="ID Unidade de Saúde" physicalName="id_ubs" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL45" populated="true" UUID="392be3e9-ed25-4388-84c1-727f97298f64" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="7" identifying="true" name="dim_especialidade_medico_fk" physicalName="dim_especialidade_medico_fk" pk-table-ref="TAB20" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP46" populated="true" UUID="d772ad43-1f1a-4080-8000-20bafba6b691" fk-column-ref="COL27" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL21" />
+   </relationship>
+   <relationship id="REL47" populated="true" UUID="9ca817b0-fadf-4920-a7c5-7ec34cdc3f94" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Atentimentos_Especialidade_fk" physicalName="atentimentos_especialidade_fk" pk-table-ref="TAB20" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP48" populated="true" UUID="633ab245-fc6e-428f-90fa-6b498179d23a" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL21" />
+   </relationship>
+   <relationship id="REL49" populated="true" UUID="66828143-8b14-4365-b6a6-ce666ee30415" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Atentimentos_Medico_fk" physicalName="atentimentos_medico_fk" pk-table-ref="TAB25" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP50" populated="true" UUID="b4acc0e4-1ca6-4f30-8034-bf9cb417d008" fk-column-ref="COL5" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL26" />
+    <column-mapping id="CMP51" populated="true" UUID="81c5a4db-f570-461c-96e2-06e5da4fbd08" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+   </relationship>
+   <relationship id="REL52" populated="true" UUID="98a26339-47e1-45e6-931b-b6a88e322387" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Atentimentos_Exame_fk" physicalName="atentimentos_exame_fk" pk-table-ref="TAB34" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP53" populated="true" UUID="8ad25261-d962-4b55-8bdd-73e7f842f70a" fk-column-ref="COL6" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL35" />
+   </relationship>
+   <relationship id="REL54" populated="true" UUID="4c9ef00f-9a05-40d0-b499-899aaf87aa00" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Atentimentos_Unidade de Saúde_fk" physicalName="atentimentos_unidade_de_saúde_fk" pk-table-ref="TAB39" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP55" populated="true" UUID="e229caec-d77d-4e96-b9c2-a3d9cfaa0510" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL40" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false" target-catalog="projeto1"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="540" y="196" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB20" x="120" y="184" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="128" y="331" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB34" x="979" y="408" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB39" x="973" y="195" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL45" pkConnection="0.5132075471698113" fkConnection="0.47058823529411764" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL54" pkConnection="0.6835443037974683" fkConnection="0.4114285714285714" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL47" pkConnection="0.8412698412698413" fkConnection="0.3612565445026178" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL49" pkConnection="0.24324324324324326" fkConnection="0.6473429951690821" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL52" pkConnection="0.15873015873015872" fkConnection="0.6636771300448431" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
