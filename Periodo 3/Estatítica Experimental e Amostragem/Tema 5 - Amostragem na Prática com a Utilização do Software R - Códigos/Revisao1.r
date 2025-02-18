@@ -22,3 +22,9 @@ plano_est = svydesign(id=~1,strata=~Stratum,probs=~selec$Prob,data=amostra,fpc=~
 
 # Estimação da Media Populacional e de seu Erro Padrão no Plano Estratificado:
 svymean(~REV84,plano_est)
+
+set.seed(4)
+sample(1:5780,3,replace = FALSE)
+
+sam = sample(1:120,10,replace = FALSE)
+sd(sam)
