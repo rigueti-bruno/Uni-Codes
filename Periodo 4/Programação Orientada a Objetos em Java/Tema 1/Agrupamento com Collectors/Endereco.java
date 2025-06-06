@@ -17,8 +17,13 @@ public class Endereco {
     public int getNumero () {
         return this.numero;
     }
-    public static void main(String args[]) {
-        Endereco ender = new Endereco ("rua X", 7);
-        System.out.println(ender.getNomeRua() + ", " + ender.getNumero());
+    @Override
+    public String toString() {
+        return nome_rua + ", " + numero;
+    }
+
+    public static void main(String[] args) {
+        Endereco ender = new Endereco("Rua X", 7);
+        System.out.println(ender);
     }
 }
