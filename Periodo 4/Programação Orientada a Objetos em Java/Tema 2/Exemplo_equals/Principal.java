@@ -35,4 +35,11 @@ public class Principal {
 			else
 				System.out.println("o1 != o3");
 	}
+
+	public int hashCode () {
+	if ( this instanceof Pessoa )
+		return this.nome.hashCode();
+	else
+		return super.hashCode();
+	}
 }
