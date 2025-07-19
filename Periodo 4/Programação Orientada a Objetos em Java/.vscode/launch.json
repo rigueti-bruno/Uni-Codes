@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fatorial",
+            "request": "launch",
+            "mainClass": "Fatorial",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
+            "name": "EncadeamentoExcecao",
+            "request": "launch",
+            "mainClass": "EncadeamentoExcecao",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
             "name": "Principal2",
             "request": "launch",
             "mainClass": "Principal2",
