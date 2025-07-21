@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Divisao",
+            "request": "launch",
+            "mainClass": "Divisao",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
             "name": "Fatorial",
             "request": "launch",
             "mainClass": "Fatorial",
