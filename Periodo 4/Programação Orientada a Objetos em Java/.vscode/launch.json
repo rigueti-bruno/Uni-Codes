@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TesteOperando",
+            "request": "launch",
+            "mainClass": "TesteOperando",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
+            "name": "ConcArrays",
+            "request": "launch",
+            "mainClass": "ConcArrays",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
             "name": "Divisao",
             "request": "launch",
             "mainClass": "Divisao",
