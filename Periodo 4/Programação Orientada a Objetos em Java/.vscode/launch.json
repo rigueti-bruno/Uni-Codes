@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JogoPingPong",
+            "request": "launch",
+            "mainClass": "JogoPingPong",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
+            "name": "PingPong",
+            "request": "launch",
+            "mainClass": "PingPong",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
             "name": "TesteOperando",
             "request": "launch",
             "mainClass": "TesteOperando",
