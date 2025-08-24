@@ -1,26 +1,30 @@
 import java.util.Random;
 public class Pessoa {
-    private String nome;
+    // Atributos:
+    private String nome; //modificador private: torna o atributo oculto ao exterior da classe
     private double codigo_identificador;
     private Random aleatorio;
-    public Pessoa (String nome) {
+
+    // Métodos:
+    
+    public Pessoa (String nome) { // Construtor da classe
         aleatorio = new Random();
         this.setNome(nome);
-        this.codigo_identificador = aleatorio.nextDouble();
+        this.codigo_identificador = aleatorio.nextDouble(); //atribui um valor aleatorio ao atributo identificador
     }
-    private void setNome (String nome) {
+    private void setNome (String nome) { //setter do atributo nome
         this.nome = nome;
     }
-    private String getNome() {
+    public String getNome() { //getter do atributo nome
         return this.nome;
     }
-    public double getCodigoIdentificador() {
+    public double getCodigoIdentificador() { //getter do atributo codigo_identificador
         return this.codigo_identificador;
     }
-    public static void main (String args[]) {
+    public static void main (String[] args) {
         Pessoa p1 = new Pessoa("Teste A");
-        System.out.println("Pessoa 1: "+p1.getNome()+", Codigo Identificador: "+p1.getCodigoIdentificador());
+        System.out.println("Pessoa 1: " + p1.getNome() + ", Codigo Identificador: " + p1.getCodigoIdentificador());
         Pessoa p2 = new Pessoa("Teste B");
-        System.out.println("Pessoa 2: "+p2.getNome()+", Codigo Identificador: "+p2.getCodigoIdentificador());
+        System.out.println("Pessoa 2: " + p2.getNome() + ", Codigo Identificador: " + p2.getCodigoIdentificador());
     }
 }

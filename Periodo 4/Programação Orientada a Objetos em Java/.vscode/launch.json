@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Endereco",
+            "request": "launch",
+            "mainClass": "Endereco",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
+            "name": "Pessoa",
+            "request": "launch",
+            "mainClass": "Pessoa",
+            "projectName": "Programação Orientada a Objetos em Java_9345f9e0"
+        },
+        {
+            "type": "java",
             "name": "Exercio01",
             "request": "launch",
             "mainClass": "Exercio01",
